@@ -1,0 +1,20 @@
+class Calculation
+  @@value1 = 5 # class level variable
+  @@value2 = 10
+
+  #addition function
+def add
+  @addedValue = @@value1 + @@value2
+  puts "Addition value of 2 numbers #{@addedValue}"
+end
+
+  #subtraction function
+  def subtract
+    @subValue = @@value2 - @@value1
+    puts "Subtracted value of 2 numbers #{@subValue}"
+  end
+
+  calculation = Calculation.new()
+  calculation.add
+  calculation.subtract
+end
